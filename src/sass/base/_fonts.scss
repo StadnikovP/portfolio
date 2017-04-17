@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Average';
+    src: url('/dist/fonts/subset-Average-Regular.woff2') format('woff2'),
+         url('/dist/fonts/subset-Average-Regular.woff') format('woff'),
+         url('/dist/fonts/subset-Average-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat_Bold';
+    src: url('/dist/fonts/subset-Montserrat-Bold.woff2') format('woff2'),
+         url('/dist/fonts/subset-Montserrat-Bold.woff') format('woff'),
+         url('/dist/fonts/subset-Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url('/dist/fonts/subset-Montserrat-Regular.woff2') format('woff2'),
+         url('/dist/fonts/subset-Montserrat-Regular.woff') format('woff'),
+         url('/dist/fonts/subset-Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wild_youthregular';
+    src: url('/dist/fonts/wildyouth-regular-webfont.woff2') format('woff2'),
+         url('/dist/fonts/wildyouth-regular-webfont.woff') format('woff'),
+         url('/dist/fonts/wildyouth-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('/dist/fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('/dist/fonts/fontawesome-webfont.woff') format('woff'),
+         url('/dist/fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin Average {
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin Montserrat_Bold {
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin Montserrat_Regular {
+    font-family: Montserrat_Regular, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin wild_youthregular {
+    font-family: wild_youthregular, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin fontAwesome {
+    font-family: fontAwesome, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin fontStyle($fz,$lh,$ls) {
+    //font-size: $fz * 1px;
+    font-size: ($fz / 10) *1rem;
+    //line-height: $lh * 1px;
+    line-height: ($lh / 10) *1rem;
+    letter-spacing: $ls *1px;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "author": "p.stadnikov",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "browser-sync": "^2.13.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-airbnb-es5": "^1.0.9",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^2.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "lint-staged": "^1.0.1",
+    "precommit-hook": "^3.0.0"
+  }
+//  "scripts": {
+//    "lint": "jshint .",
+//    "validate": "npm ls"
+//  },
+//  "pre-commit": [
+//    "lint",
+//    "validate",
+//    "test"
+//  ]
+}

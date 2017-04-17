@@ -1,0 +1,235 @@
+/* ==========================================================================
+                HEADER STYLES
+   ========================================================================== */
+
+html {
+    height: auto;
+    min-height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+}
+
+//::selection {
+//    background: $cGreen;
+//    color:#fff;
+//    transition: background .2s 0s, color .2s 0s;
+//}
+
+.block-clear{
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.vertical-center{
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        margin: 0;
+        vertical-align: middle;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.site-body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.address-line-top{
+    background: #e4bb7a;
+
+    .main-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .address{
+        display: inline-block;
+        color: $cDark;
+        @include Average;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 13px;
+            background-image: url('/dist/img/spritesheet.png');
+            background-position: -58px -28px;
+            background-repeat: no-repeat;
+            padding-right: 10px;
+        }
+    }
+
+    .social-link-header{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        text-decoration: none;
+        margin: 8px 16px 8px 0;
+        background-image: url('/dist/img/spritesheet.png');
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &.icon-f{
+            background-position: -35px -5px;
+        }
+
+        &.icon-i{
+            background-position: -35px -28px;
+        }
+
+        &.icon-t{
+            background-position: -58px -5px;
+        }
+    }
+}
+
+.site-header{
+    background: #262626;
+    height: 80px;
+
+    .main-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.main-menu{
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.main-menu-link{
+    margin-right: 39px;
+    color: $cWhite;
+    @include fontAwesome;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .3s 0s;
+    letter-spacing: .05rem;
+    vertical-align: middle;
+
+    &:hover{
+        color: $cBrown;
+    }
+}
+
+.last-element-menu{
+    display: inline-block;
+    position: relative;
+    margin-left: 2px;
+    width: 15px;
+    height: 3px;
+    background: $cWhite;
+
+    &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: -5px;
+        height: 3px;
+        background: $cWhite;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -5px;
+        background: $cWhite;
+    }
+
+}
+
+
+.first-window{
+    background: #3f3f3f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center-content{
+        text-align: center;
+    }
+
+    .title{
+        color: #e4bb7a;
+        @include wild_youthregular;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .name{
+        color: $cWhite;
+        @include Average;
+        font-size: 7.6rem;
+        line-height: 7.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .address{
+        color: $cWhite;
+        @include Average;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .arrow{
+        margin-bottom: 3rem;
+    }
+
+
+    .btn{
+        display: inline-block;
+        background: $cBrown;
+        color: $cDark;
+        @include Montserrat_Regular;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+
