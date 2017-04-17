@@ -61,6 +61,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .address-line-top{
@@ -96,7 +97,7 @@ body {
         width: 13px;
         height: 13px;
         text-decoration: none;
-        margin: 8px 16px 8px 0;
+        margin: 8px 16px 7px 0;
         background-image: url('/dist/img/spritesheet.png');
 
         &:last-child{
@@ -181,22 +182,27 @@ body {
 
 
 .first-window{
-    background: #3f3f3f;
-    height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background: #3f3f3f;
+    //padding-top: 110px;
 
     .center-content{
         text-align: center;
+        margin-top: 76px;
     }
 
     .title{
         color: #e4bb7a;
         @include wild_youthregular;
         font-size: 5rem;
-        line-height: 5rem;
-        margin-bottom: 1rem;
+        line-height: 4.2rem;
+        margin-bottom: 0;
+        margin-top: 1px;
+        margin-left: -9px;
     }
 
     .name{
@@ -204,7 +210,7 @@ body {
         @include Average;
         font-size: 7.6rem;
         line-height: 7.6rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: .4rem;
     }
 
     .address{
@@ -212,11 +218,11 @@ body {
         @include Average;
         font-size: 1.6rem;
         line-height: 1.6rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 4.5rem;
     }
 
     .arrow{
-        margin-bottom: 3rem;
+        margin-bottom: 4.1rem;
     }
 
 
@@ -228,6 +234,12 @@ body {
         text-transform: uppercase;
         font-size: 1.5rem;
         line-height: 1.5rem;
+        padding: 17px 62px;
+    }
+
+    .element-down{
+        position: absolute;
+        bottom: 50px;
     }
 
 }

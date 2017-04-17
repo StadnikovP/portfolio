@@ -904,7 +904,8 @@ body {
 .wrapper-header {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
 
 .address-line-top {
   background: #e4bb7a; }
@@ -940,7 +941,7 @@ body {
     width: 13px;
     height: 13px;
     text-decoration: none;
-    margin: 8px 16px 8px 0;
+    margin: 8px 16px 7px 0;
     background-image: url("/dist/img/spritesheet.png"); }
     .address-line-top .social-link-header:last-child {
       margin-right: 0; }
@@ -1010,8 +1011,7 @@ body {
     background: #ffffff; }
 
 .first-window {
-  background: #3f3f3f;
-  height: 100vh;
+  position: relative;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1020,17 +1020,22 @@ body {
           justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  height: 100vh;
+  background: #3f3f3f; }
   .first-window .center-content {
-    text-align: center; }
+    text-align: center;
+    margin-top: 76px; }
   .first-window .title {
     color: #e4bb7a;
     font-family: wild_youthregular, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 5rem;
-    line-height: 5rem;
-    margin-bottom: 1rem; }
+    line-height: 4.2rem;
+    margin-bottom: 0;
+    margin-top: 1px;
+    margin-left: -9px; }
   .first-window .name {
     color: #ffffff;
     font-family: Average, sans-serif;
@@ -1038,7 +1043,7 @@ body {
     font-style: normal;
     font-size: 7.6rem;
     line-height: 7.6rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: .4rem; }
   .first-window .address {
     color: #ffffff;
     font-family: Average, sans-serif;
@@ -1046,9 +1051,9 @@ body {
     font-style: normal;
     font-size: 1.6rem;
     line-height: 1.6rem;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 4.5rem; }
   .first-window .arrow {
-    margin-bottom: 3rem; }
+    margin-bottom: 4.1rem; }
   .first-window .btn {
     display: inline-block;
     background: #e4bb7a;
@@ -1058,7 +1063,11 @@ body {
     font-style: normal;
     text-transform: uppercase;
     font-size: 1.5rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    padding: 17px 62px; }
+  .first-window .element-down {
+    position: absolute;
+    bottom: 50px; }
 
 /* ==========================================================================
                 FOOTER STYLES
@@ -1075,6 +1084,10 @@ body {
 /* ==========================================================================
                 main page STYLES
    ========================================================================== */
+.wrapper-main-slider {
+  width: 100%;
+  background: #e3e3e3; }
+
 /* ==========================================================================
                END main page STYLES
 ========================================================================== */

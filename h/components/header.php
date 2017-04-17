@@ -83,7 +83,7 @@
                     <div class="arrow"><img src="/dist/img/row.png" alt=""></div>
                     <a href="#" class="btn">menu</a>
                 </div>
-                <div class="element-down"></div>
+                <div class="element-down"><img src="/dist/img/down.png" alt=""></div>
             </div>
 
 
