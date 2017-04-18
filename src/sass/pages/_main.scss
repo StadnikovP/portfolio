@@ -4,7 +4,47 @@
 .wrapper-main-slider{
     width: 100%;
     background: #e3e3e3;
+    height: 80vh;
+
+    .swiper-container{
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .swiper-slide{
+        display: flex;
+        align-items:center;
+    }
+
+    .inner-slide{
+        max-width: 400px;
+        margin-top: -38px;
+        margin-left: -1px;
+    }
+
+    .first-title{
+        @include wild_youthregular;
+        @include fontStyle(45,55,0);
+        margin-left: -1px;
+        color: $cBrown;
+    }
+
+    .second-title{
+        @include Montserrat_Bold;
+        @include fontStyle(36,36,3.7);
+        text-transform: uppercase;
+        color: #3f3f3f;
+        margin-bottom: 34px;
+    }
+
+    .text{
+        @include Average;
+        @include fontStyle(15,26,0);
+        color: #3f3f3f;
+    }
 }
+
 /* ==========================================================================
                END main page STYLES
 ========================================================================== */

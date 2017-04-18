@@ -37,10 +37,10 @@
                 appConfig.desktopVersion = !appConfig.mobileVersion;
             })(737,940,'viewport');
         </script>
-        <script src="http://api-maps.yandex.ru/2.1/?lang=ru-RU&load=package.full" type="text/javascript"></script>
+<!--        <script src="http://api-maps.yandex.ru/2.1/?lang=ru-RU&load=package.full" type="text/javascript"></script>-->
         <link rel="stylesheet" href="/dist/main.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!--        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">-->
     </head>
 
     <body class="page-<?=$page?>" data-page="<?=$page?>">

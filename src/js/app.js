@@ -2,7 +2,7 @@ var _pageShare;
 var moduleApp = {
     'init': function () {
         moduleApp.pollifil();
-        moduleApp.sliderSwiper();gi
+        moduleApp.sliderSwiper();
         moduleApp.formValidation();
     },
     'pollifil': function(){
@@ -450,6 +450,7 @@ var moduleApp = {
     },
     'sliderSwiper': function () {
         if($('.js-main-slider').length> 0){
+            console.log('swiper');
 
             var configMain = {
                     slidesPerView: 1,
@@ -467,114 +468,6 @@ var moduleApp = {
             }
         }
 
-        if($('.js-about-slider').length > 0){
-            var slideActive = 0;
-            var slidePosition = 0;
-            var scroll = 0;
-
-            var configAbout = {
-                    slidesPerView: 4,
-                    centeredSlides: false,
-                    paginationClickable: true,
-                    spaceBetween: 0,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    simulateTouch: false,
-                    onSlideNextStart: function(swiper){
-                        var activeIndex = swiper.activeIndex;
-                        if(activeIndex > slideActive){
-                            $(swiper.slides[activeIndex]).find('.js-about-date').trigger('click')
-                        }
-                        slidePosition++;
-                    },
-                    onSlidePrevStart: function(swiper){
-                        var activeIndex = swiper.activeIndex,
-                            currentLimit = activeIndex + 3;
-
-                        if(slideActive > currentLimit ){
-                            $(swiper.slides[currentLimit]).find('.js-about-date').trigger('click')
-                        }
-                        slidePosition--;
-                    },
-                },
-                $aboutSlider = $('.js-about-slider');
-
-            var $aboutSwiper = $aboutSlider.swiper(configAbout);
-
-            $('.js-about-date').on('click', function(){
-                if(!$(this).hasClass('active')){
-                    var $dates = $('.js-about-date'),
-                        $this = $(this),
-                        $slide = $this.closest('.swiper-slide');
-                    var $content = $this.find('.content').clone();
-
-                    $dates.removeClass('active');
-                    $this.addClass('active');
-                    slideActive = $slide.index();
-                    $('.js-about-content .content').removeClass('active').addClass('deleted');
-                    $content.appendTo('.js-about-content');
-                    setTimeout(function(){
-                        $('.js-about-content .deleted').remove();
-                        $('.js-about-content .content').addClass('active');
-                    },400);
-                    //$this.find('.content').clone().appendTo('.js-about-content');
-                }
-            });
-        }
-
-        if($('.js-is-slider').length > 0){
-            var configIsSlider = {
-                    slidesPerView: 1,
-                    centeredSlides: false,
-                    paginationClickable: true,
-                    spaceBetween: 0,
-                    autoHeight: true,
-                    pagination: '.swiper-pagination',
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                },
-                $isSlider = $('.js-is-slider');
-
-            var $isSwiper = $isSlider.swiper(configIsSlider);            
-        }
-
-        if($('.js-detail-slider').length > 0){
-            var configDetail = {
-                    slidesPerView: 2,
-                    centeredSlides: false,
-                    paginationClickable: true,
-                    spaceBetween: 20,
-                    nextButton: '.detail-slider-button-next',
-                    prevButton: '.detail-slider-button-prev',
-                },
-                $detailSlider = $('.js-detail-slider');
-
-            var $detailSwiper = $detailSlider.swiper(configDetail);
-        }
-
-        if($('.js-prodaction-slider').length > 0){
-            var configProdaction = {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-                nextButton: '.product-swiper-next',
-                prevButton: '.product-swiper-prev',
-                },
-                $prodactionSlider = $('.js-prodaction-slider');
-
-            var productSwiper = $prodactionSlider.swiper(configProdaction);
-        }
-
-        if($('.js-office-slider').length > 0){
-            var configOffice = {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-                nextButton: '.office-swiper-next',
-                prevButton: '.office-swiper-prev',
-                },
-                $officeSlider = $('.js-office-slider');
-
-            var officeSwiper = $officeSlider.swiper(configOffice);
-        }
     },
 };
 

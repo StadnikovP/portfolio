@@ -14,7 +14,7 @@ const sourcesPath = './src';
 const assetsPath = './dist';
 
 const jslibs = [
-  sourcesPath + '/js/vendors/jguery-3.1.0.min.js',
+  sourcesPath + '/js/vendors/jquery-3.1.0.min.js',
   sourcesPath + '/js/vendors/jquery.fancybox.js',
   sourcesPath + '/js/vendors/swiper3.min.js',
   sourcesPath + '/js/vendors/inview.min.js',
