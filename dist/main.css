@@ -866,6 +866,16 @@ html {
 body {
   min-height: 100vh; }
 
+::-moz-selection {
+  background: #e4bb7a;
+  color: #ffffff;
+  transition: background .2s 0s, color .2s 0s; }
+
+::selection {
+  background: #e4bb7a;
+  color: #ffffff;
+  transition: background .2s 0s, color .2s 0s; }
+
 .block-clear:after {
   content: "";
   display: block;
@@ -1054,20 +1064,30 @@ body {
     margin-bottom: 4.5rem; }
   .first-window .arrow {
     margin-bottom: 4.1rem; }
-  .first-window .btn {
-    display: inline-block;
-    background: #e4bb7a;
-    color: #121212;
-    font-family: Montserrat_Regular, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    text-transform: uppercase;
+  .first-window .btn-default {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    letter-spacing: 0px;
     padding: 17px 62px; }
   .first-window .element-down {
     position: absolute;
     bottom: 50px; }
+
+.btn-default {
+  display: inline-block;
+  background: #e4bb7a;
+  color: #121212;
+  font-family: Montserrat_Regular, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.handwritten-font {
+  font-family: wild_youthregular, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #e4bb7a; }
 
 /* ==========================================================================
                 FOOTER STYLES
@@ -1084,7 +1104,12 @@ body {
 /* ==========================================================================
                 main page STYLES
    ========================================================================== */
+.wrapper-content {
+  width: 1170px;
+  margin: 0 auto; }
+
 .wrapper-main-slider {
+  position: relative;
   width: 100%;
   background: #e3e3e3;
   height: 80vh; }
@@ -1102,7 +1127,7 @@ body {
   .wrapper-main-slider .inner-slide {
     max-width: 400px;
     margin-top: -38px;
-    margin-left: -1px; }
+    margin-left: 0; }
   .wrapper-main-slider .first-title {
     font-family: wild_youthregular, sans-serif;
     font-weight: normal;
@@ -1110,7 +1135,7 @@ body {
     font-size: 4.5rem;
     line-height: 5.5rem;
     letter-spacing: 0px;
-    margin-left: -1px;
+    margin-left: 3px;
     color: #e4bb7a; }
   .wrapper-main-slider .second-title {
     font-family: Montserrat_Bold, sans-serif;
@@ -1130,6 +1155,341 @@ body {
     line-height: 2.6rem;
     letter-spacing: 0px;
     color: #3f3f3f; }
+
+.container-discovery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  background: #3f3f3f; }
+  .container-discovery .title {
+    font-size: 5rem;
+    line-height: 4.8rem;
+    letter-spacing: 0px; }
+  .container-discovery .second-title {
+    color: #ffffff;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    margin-bottom: 32px; }
+  .container-discovery .row {
+    margin-bottom: 33px; }
+  .container-discovery .text {
+    max-width: 565px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    letter-spacing: 0px;
+    color: #eeeeee;
+    margin-bottom: 42px; }
+  .container-discovery .btn-default {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+    padding: 17px 47px; }
+
+.container-quote {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 357px;
+  background: #292929; }
+  .container-quote .wrapper-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+  .container-quote .text {
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3.6rem;
+    line-height: 3.7rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 17px;
+    margin-top: 20px; }
+  .container-quote .author {
+    font-size: 4.5rem;
+    line-height: 4.1rem;
+    letter-spacing: 0px;
+    margin-top: 10px; }
+
+.wrapper-menu {
+  padding-top: 78px; }
+  .wrapper-menu .title {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 6rem;
+    letter-spacing: 0px; }
+  .wrapper-menu .second-title {
+    margin-bottom: 98px;
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 3rem;
+    letter-spacing: 4.6px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    text-transform: uppercase; }
+  .wrapper-menu .menu-column {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px; }
+  .wrapper-menu .menu-element {
+    position: relative;
+    height: 306px;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    margin-right: 15px;
+    margin-left: 115px;
+    border: 1px solid #e4bb7a;
+    box-sizing: border-box;
+    padding: 50px 50px 30px 136px; }
+    .wrapper-menu .menu-element:last-child {
+      margin-right: 115px;
+      margin-left: 15px;
+      padding: 50px 110px 30px 72px; }
+      .wrapper-menu .menu-element:last-child .dish-image {
+        right: 0;
+        left: auto;
+        -webkit-transform: translate(50%, 36%);
+            -ms-transform: translate(50%, 36%);
+                transform: translate(50%, 36%); }
+    .wrapper-menu .menu-element .dish-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-transform: translate(-50%, 36%);
+          -ms-transform: translate(-50%, 36%);
+              transform: translate(-50%, 36%); }
+    .wrapper-menu .menu-element .dish-title {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 2px;
+      font-family: Montserrat_Bold, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      color: #000000;
+      text-transform: uppercase; }
+    .wrapper-menu .menu-element .dish-size {
+      font-size: 1.5rem;
+      line-height: 1rem;
+      letter-spacing: 0px;
+      font-family: Average, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      color: #e4bb7a;
+      margin-bottom: 40px; }
+    .wrapper-menu .menu-element .dish-description {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      letter-spacing: 0px;
+      font-family: Average, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      color: #4d4d4d;
+      margin-bottom: 36px; }
+    .wrapper-menu .menu-element .dish-price {
+      font-size: 2.4rem;
+      line-height: 3rem;
+      letter-spacing: 0.9px;
+      font-family: Montserrat_Bold, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      color: #000000; }
+
+.wrapper-second-menu {
+  background: #292929;
+  padding-top: 89px;
+  padding-bottom: 98px; }
+  .wrapper-second-menu .title {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 5.1rem;
+    letter-spacing: 0px; }
+  .wrapper-second-menu .second-title {
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    letter-spacing: 4.4px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 33px; }
+  .wrapper-second-menu .description {
+    max-width: 645px;
+    margin: 0 auto 90px auto;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #eeeeee; }
+  .wrapper-second-menu .menu-list-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .wrapper-second-menu .menu-list-row {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    margin-right: 30px; }
+    .wrapper-second-menu .menu-list-row:last-child {
+      margin-right: 0; }
+  .wrapper-second-menu .menu-element {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 33px; }
+  .wrapper-second-menu .menu-element-name {
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin-left: 30px; }
+  .wrapper-second-menu .menu-element-title {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    letter-spacing: 1.8px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .wrapper-second-menu .menu-element-description {
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #e4bb7a; }
+  .wrapper-second-menu .menu-element-price {
+    -webkit-flex-grow: .5;
+        -ms-flex-positive: .5;
+            flex-grow: .5;
+    margin-top: -12px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: 0px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-align: right; }
+
+.wrapper-opening-hours {
+  background: #1a1a1a;
+  padding-top: 79px;
+  padding-bottom: 96px; }
+  .wrapper-opening-hours .title {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 5.1rem;
+    letter-spacing: 0px; }
+  .wrapper-opening-hours .second-title {
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    letter-spacing: 4px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 85px; }
+  .wrapper-opening-hours .hours-block {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff; }
+  .wrapper-opening-hours .image {
+    -webkit-flex-basis: 72%;
+        -ms-flex-preferred-size: 72%;
+            flex-basis: 72%;
+    height: 355px; }
+  .wrapper-opening-hours .time-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-basis: 35%;
+        -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+    background: #ffffff;
+    margin: 10px;
+    border: 1px solid #777777; }
+  .wrapper-opening-hours .time-element {
+    text-align: center;
+    margin-bottom: 35px; }
+    .wrapper-opening-hours .time-element:last-child {
+      margin-bottom: 0; }
+  .wrapper-opening-hours .time-title {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    letter-spacing: 2px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000000; }
+  .wrapper-opening-hours .time-description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #4d4d4d; }
 
 /* ==========================================================================
                END main page STYLES

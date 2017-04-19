@@ -1,7 +1,13 @@
 /* ==========================================================================
                 main page STYLES
    ========================================================================== */
+.wrapper-content{
+    width: 1170px;
+    margin: 0 auto;
+}
+
 .wrapper-main-slider{
+    position: relative;
     width: 100%;
     background: #e3e3e3;
     height: 80vh;
@@ -20,13 +26,13 @@
     .inner-slide{
         max-width: 400px;
         margin-top: -38px;
-        margin-left: -1px;
+        margin-left: 0;
     }
 
     .first-title{
         @include wild_youthregular;
         @include fontStyle(45,55,0);
-        margin-left: -1px;
+        margin-left: 3px;
         color: $cBrown;
     }
 
@@ -42,6 +48,292 @@
         @include Average;
         @include fontStyle(15,26,0);
         color: #3f3f3f;
+    }
+}
+
+.container-discovery{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    height: 600px;
+    background: #3f3f3f;
+
+    .title{
+        @include fontStyle(50,48,0);
+    }
+
+    .second-title{
+        color: $cWhite;
+        @include Montserrat_Bold;
+        @include fontStyle(36,48,-.2);
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    .row{
+        margin-bottom: 33px;
+    }
+
+    .text{
+        max-width: 565px;
+        @include Average;
+        @include fontStyle(15,26,0);
+        color: #eeeeee;
+        margin-bottom: 42px;
+    }
+
+    .btn-default{
+        @include fontStyle(15,15,0);
+        padding: 17px 47px;
+    }
+}
+
+.container-quote{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    height: 357px;
+    background: #292929;
+
+    .wrapper-content{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        height: 100%;
+    }
+
+    .text{
+        @include Average;
+        @include fontStyle(36,37,0);
+        color: $cWhite;
+        margin-bottom: 17px;
+        margin-top: 20px;
+
+    }
+
+    .author{
+        @include fontStyle(45,41,0);
+        margin-top: 10px;
+    }
+}
+
+.wrapper-menu{
+    padding-top: 78px;
+
+    .title{
+        text-align: center;
+        @include fontStyle(45,60,0);
+    }
+
+    .second-title{
+        margin-bottom: 98px;
+        text-align: center;
+        @include fontStyle(36,30,4.6);
+        @include Montserrat_Bold;
+        color: $cBlack;
+        text-transform: uppercase;
+    }
+
+    .menu-column{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .menu-element{
+        position: relative;
+        height: 306px;
+        flex-basis: 50%;
+        margin-right: 15px;
+        margin-left: 115px;
+        border: 1px solid $cBrown;
+        box-sizing: border-box;
+        padding: 50px 50px 30px 136px;
+
+        &:last-child{
+            margin-right: 115px;
+            margin-left: 15px;
+            padding: 50px 110px 30px 72px;
+            .dish-image{
+                right: 0;
+                left: auto;
+                transform: translate(50%, 36%);
+            }
+        }
+
+        .dish-image{
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-50%, 36%);
+        }
+
+        .dish-title{
+            @include fontStyle(16,25,2);
+            @include Montserrat_Bold;
+            color: $cBlack;
+            text-transform: uppercase;
+        }
+
+        .dish-size{
+            @include fontStyle(15,10,0);
+            @include Average;
+            color: $cBrown;
+            margin-bottom: 40px;
+        }
+
+        .dish-description{
+            @include fontStyle(15,24,0);
+            @include Average;
+            color: #4d4d4d;
+            margin-bottom: 36px;
+        }
+
+        .dish-price{
+            @include fontStyle(24,30,.9);
+            @include Montserrat_Bold;
+            color: $cBlack;
+        }
+    }
+}
+
+.wrapper-second-menu{
+    background: #292929;
+    padding-top: 89px;
+    padding-bottom: 98px;
+
+    .title{
+        text-align: center;
+        @include fontStyle(45,51,0);
+    }
+
+    .second-title{
+        text-align: center;
+        @include fontStyle(36,43,4.4);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+    }
+
+    .description{
+        max-width: 645px;
+        margin: 0 auto 90px auto;
+        text-align: center;
+        @include fontStyle(15,24,0);
+        @include Average;
+        color: #eeeeee;
+    }
+
+    .menu-list-container{
+        display: flex;
+    }
+
+    .menu-list-row{
+        flex-basis: 50%;
+        margin-right: 30px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    .menu-element{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 33px;
+    }
+
+    .menu-element-name{
+        flex-grow: 2;
+        margin-left: 30px;
+    }
+
+    .menu-element-title{
+        @include fontStyle(16,27,1.8);
+        @include Montserrat_Bold;
+        text-transform: uppercase;
+        color: $cWhite;
+    }
+
+    .menu-element-description{
+        @include fontStyle(15,13,0);
+        @include Average;
+        color: $cBrown;
+    }
+
+    .menu-element-price{
+        flex-grow:.5;
+        margin-top: -12px;
+        @include fontStyle(15,30,0);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-align: right;
+    }
+}
+
+.wrapper-opening-hours{
+    background: #1a1a1a;
+    padding-top: 79px;
+    padding-bottom: 96px;
+
+    .title{
+        text-align: center;
+        @include fontStyle(45,51,0);
+    }
+
+    .second-title{
+        text-align: center;
+        @include fontStyle(36,47,4);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-transform: uppercase;
+        margin-bottom: 85px;
+    }
+
+    .hours-block{
+        width: 100%;
+        display: flex;
+        background: $cWhite;
+    }
+
+    .image{
+        flex-basis: 72%;
+        height: 355px;
+    }
+
+    .time-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 35%;
+        background: $cWhite;
+        margin: 10px;
+        border: 1px solid #777777;
+    }
+
+    .time-element{
+        text-align: center;
+        margin-bottom: 35px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .time-title{
+        @include fontStyle(15,26,2);
+        @include Montserrat_Bold;
+        text-transform: uppercase;
+        color: $cBlack;
+    }
+
+    .time-description{
+        @include fontStyle(15,25,0);
+        @include Average;
+        color: #4d4d4d;
     }
 }
 

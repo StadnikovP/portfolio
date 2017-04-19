@@ -13,11 +13,11 @@ body {
     min-height: 100vh;
 }
 
-//::selection {
-//    background: $cGreen;
-//    color:#fff;
-//    transition: background .2s 0s, color .2s 0s;
-//}
+::selection {
+    background: $cBrown;
+    color: $cWhite;
+    transition: background .2s 0s, color .2s 0s;
+}
 
 .block-clear{
     &:after {
@@ -180,7 +180,6 @@ body {
 
 }
 
-
 .first-window{
     position: relative;
     display: flex;
@@ -226,15 +225,10 @@ body {
     }
 
 
-    .btn{
-        display: inline-block;
-        background: $cBrown;
-        color: $cDark;
-        @include Montserrat_Regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
+    .btn-default{
+        @include fontStyle(15,15,0);
         padding: 17px 62px;
+
     }
 
     .element-down{
@@ -242,6 +236,20 @@ body {
         bottom: 50px;
     }
 
+}
+
+.btn-default{
+    display: inline-block;
+    background: $cBrown;
+    color: $cDark;
+    @include Montserrat_Regular;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.handwritten-font{
+    @include wild_youthregular;
+    color: $cBrown;
 }
 
 

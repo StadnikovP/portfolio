@@ -81,7 +81,7 @@
                     <div class="name">Steakville Restaurant</div>
                     <div class="address">New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</div>
                     <div class="arrow"><img src="/dist/img/row.png" alt=""></div>
-                    <a href="#" class="btn">menu</a>
+                    <a href="#" class="btn-default">menu</a>
                 </div>
                 <div class="element-down"><img src="/dist/img/down.png" alt=""></div>
             </div>
