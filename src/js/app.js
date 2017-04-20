@@ -468,6 +468,23 @@ var moduleApp = {
             }
         }
 
+        if($('.js-quote-slider').length > 0){
+            var configQuote = {
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                    paginationClickable: true,
+                    spaceBetween: 0,
+                    pagination: '.swiper-pagination',
+                    onSlideChangeStart: function(){
+                    }
+                },
+                $quoteSlider = $('.js-quote-slider');
+
+            if($('.js-main-slider .swiper-slide').length > 1){
+                var $quoteSwiper = $quoteSlider.swiper(configQuote);
+            }
+        }
+
     },
 };
 

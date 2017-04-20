@@ -206,4 +206,85 @@ include('./components/header.php');
 
 </div>
 
+<div class="wrapper-our-chefs">
+    <div class="title handwritten-font">Our Staff</div>
+    <div class="second-title">meet our chefs</div>
+
+    <div class="wrapper-content">
+        <div class="chefs-list">
+            <div class="chefs-element">
+                <div class="chefs-image"><img src="/dist/img/chefs-1.png" alt=""></div>
+                <div class="chefs-content">
+                    <div class="chefs-name">James T kirk</div>
+                    <div class="chefs-title">Captain</div>
+                    <div class="chefs-social-list">
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                    </div>
+                    <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                </div>
+            </div>
+            <div class="chefs-element">
+                <div class="chefs-image"><img src="/dist/img/chefs-2.png" alt=""></div>
+                <div class="chefs-content">
+                    <div class="chefs-name">Leonard mccoy</div>
+                    <div class="chefs-title">Doctor Not  A ...</div>
+                    <div class="chefs-social-list">
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                    </div>
+                    <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                </div>
+            </div>
+            <div class="chefs-element">
+                <div class="chefs-image"><img src="/dist/img/chefs-3.png" alt=""></div>
+                <div class="chefs-content">
+                    <div class="chefs-name">Hikaru sulu</div>
+                    <div class="chefs-title">Pilot</div>
+                    <div class="chefs-social-list">
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item"></a>
+                    </div>
+                    <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper-book-table">
+    <div class="title handwritten-font">Reservation</div>
+    <div class="second-title">Book a Table</div>
+    <div class="text-book-table">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+    <div class="btn-default">book a table</div>
+</div>
+
+<div class="wrapper-quote-slider">
+    <div class="swiper-container js-quote-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner-slide">
+                    <div class="icon-quote"><img src="/dist/img/quote-icon.png" alt=""></div>
+                    <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+                    <div class="author-quote">John Wick</div>
+                    <div class="profession-quote">Proffesional Cleaner</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner-slide">
+                    <div class="icon-quote"><img src="/dist/img/quote-icon.png" alt=""></div>
+                    <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+                    <div class="author-quote">John Wick</div>
+                    <div class="profession-quote">Proffesional Cleaner</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev is-slider-swiper-prev"></div>
+    <div class="swiper-button-next is-slider-swiper-next"></div>
+</div>
+
 <? include('./components/footer.php'); ?>

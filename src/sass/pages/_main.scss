@@ -337,6 +337,164 @@
     }
 }
 
+.wrapper-our-chefs{
+    background: #292929;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .title{
+        text-align: center;
+        @include fontStyle(45,49,0);
+    }
+
+    .second-title{
+        text-align: center;
+        @include fontStyle(36,47,4);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-transform: uppercase;
+        margin-bottom: 92px;
+    }
+
+    .chefs-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .chefs-element{
+        width: 270px;
+        text-align: center;
+    }
+
+    .chefs-content{
+        padding: 0 25px;
+    }
+
+    .chefs-image{
+        margin-bottom: 40px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .chefs-name{
+        @include fontStyle(16,25,2);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-transform: uppercase;
+    }
+
+    .chefs-title{
+        @include fontStyle(15,15,0);
+        @include Average;
+        color: $cBrown;
+        margin-bottom: 48px;
+    }
+
+    .chefs-social-list{
+        margin-bottom: 38px;
+    }
+
+    .chefs-social-item{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: $cBrown;
+        margin-right: 18px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    .chefs-text{
+        @include fontStyle(15,25,0);
+        @include Average;
+        color: $cWhite;
+    }
+}
+
+.wrapper-book-table{
+    text-align: center;
+    padding-top: 81px;
+    padding-bottom: 100px;
+
+    .title{
+        @include fontStyle(45,49,1);
+    }
+
+    .second-title{
+        text-align: center;
+        @include fontStyle(36,47,3.8);
+        @include Montserrat_Bold;
+        color: $cBlack;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+    }
+
+    .text-book-table{
+        max-width: 740px;
+        margin: 0 auto 42px auto;
+        @include fontStyle(15,26,0);
+        @include Average;
+        color: #4d4d4d;
+    }
+
+    .btn-default{
+        @include fontStyle(15,30,-.3);
+        @include Montserrat_Bold;
+        color: $cBlack;
+        padding: 9px 30px;
+    }
+}
+
+
+.wrapper-quote-slider{
+    height: 440px;
+    background: #292929;
+    position: relative;
+
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-container{
+        width: 750px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .icon-quote{
+        margin-bottom: 40px;
+    }
+
+    .text-quote{
+        @include fontStyle(15,25,0);
+        @include Average;
+        color: #d9d9d9;
+        margin-bottom: 40px;
+    }
+
+    .author-quote{
+        @include fontStyle(16,25,2);
+        @include Montserrat_Bold;
+        color: $cWhite;
+        text-transform: uppercase;
+    }
+
+    .profession-quote{
+        @include fontStyle(15,25,0);
+        @include Montserrat_Regular;
+        color: $cBrown;
+        margin-bottom: 20px;
+    }
+}
+
+
 /* ==========================================================================
                END main page STYLES
 ========================================================================== */

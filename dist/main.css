@@ -1491,6 +1491,165 @@ body {
     font-style: normal;
     color: #4d4d4d; }
 
+.wrapper-our-chefs {
+  background: #292929;
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  .wrapper-our-chefs .title {
+    text-align: center;
+    font-size: 4.5rem;
+    line-height: 4.9rem;
+    letter-spacing: 0px; }
+  .wrapper-our-chefs .second-title {
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    letter-spacing: 4px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 92px; }
+  .wrapper-our-chefs .chefs-list {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .wrapper-our-chefs .chefs-element {
+    width: 270px;
+    text-align: center; }
+  .wrapper-our-chefs .chefs-content {
+    padding: 0 25px; }
+  .wrapper-our-chefs .chefs-image {
+    margin-bottom: 40px; }
+    .wrapper-our-chefs .chefs-image img {
+      width: 100%; }
+  .wrapper-our-chefs .chefs-name {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .wrapper-our-chefs .chefs-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #e4bb7a;
+    margin-bottom: 48px; }
+  .wrapper-our-chefs .chefs-social-list {
+    margin-bottom: 38px; }
+  .wrapper-our-chefs .chefs-social-item {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #e4bb7a;
+    margin-right: 18px; }
+    .wrapper-our-chefs .chefs-social-item:last-child {
+      margin-right: 0; }
+  .wrapper-our-chefs .chefs-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff; }
+
+.wrapper-book-table {
+  text-align: center;
+  padding-top: 81px;
+  padding-bottom: 100px; }
+  .wrapper-book-table .title {
+    font-size: 4.5rem;
+    line-height: 4.9rem;
+    letter-spacing: 1px; }
+  .wrapper-book-table .second-title {
+    text-align: center;
+    font-size: 3.6rem;
+    line-height: 4.7rem;
+    letter-spacing: 3.8px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 28px; }
+  .wrapper-book-table .text-book-table {
+    max-width: 740px;
+    margin: 0 auto 42px auto;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #4d4d4d; }
+  .wrapper-book-table .btn-default {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.3px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    padding: 9px 30px; }
+
+.wrapper-quote-slider {
+  height: 440px;
+  background: #292929;
+  position: relative; }
+  .wrapper-quote-slider .swiper-slide {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .wrapper-quote-slider .swiper-container {
+    width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .wrapper-quote-slider .icon-quote {
+    margin-bottom: 40px; }
+  .wrapper-quote-slider .text-quote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    font-family: Average, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #d9d9d9;
+    margin-bottom: 40px; }
+  .wrapper-quote-slider .author-quote {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 2px;
+    font-family: Montserrat_Bold, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .wrapper-quote-slider .profession-quote {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    font-family: Montserrat_Regular, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #e4bb7a;
+    margin-bottom: 20px; }
+
 /* ==========================================================================
                END main page STYLES
 ========================================================================== */
