@@ -62,6 +62,17 @@ body {
     top: 0;
     width: 100%;
     z-index: 5;
+    transition: transform .3s 0s;
+
+    &.up-header{
+        transform: translateY(-30px);
+    }
+
+    &.small-header{
+        .site-header{
+            height: 50px;
+        }
+    }
 }
 
 .address-line-top{
@@ -83,10 +94,10 @@ body {
         &:before{
             content: '';
             display: inline-block;
-            width: 7px;
-            height: 13px;
+            width: 8px;
+            height: 12px;
             background-image: url('/dist/img/spritesheet.png');
-            background-position: -58px -28px;
+            background-position: -52px -53px;
             background-repeat: no-repeat;
             padding-right: 10px;
         }
@@ -109,11 +120,11 @@ body {
         }
 
         &.icon-i{
-            background-position: -35px -28px;
+            background-position: -35px -29px;
         }
 
         &.icon-t{
-            background-position: -58px -5px;
+            background-position: -29px -53px;
         }
     }
 }
@@ -121,6 +132,7 @@ body {
 .site-header{
     background: #262626;
     height: 80px;
+    transition: height .3s 0s;
 
     .main-wrapper{
         display: flex;
@@ -187,7 +199,7 @@ body {
     align-items: center;
     height: 100vh;
     background: #3f3f3f;
-    //padding-top: 110px;
+    background: darkred;
 
     .center-content{
         text-align: center;
@@ -224,7 +236,6 @@ body {
         margin-bottom: 4.1rem;
     }
 
-
     .btn-default{
         @include fontStyle(15,15,0);
         padding: 17px 62px;
@@ -234,8 +245,15 @@ body {
     .element-down{
         position: absolute;
         bottom: 50px;
+        animation: down-link 2s ease-in-out infinite;
+        cursor: pointer;
     }
+}
 
+@keyframes down-link {
+    0%{transform: translateY(-5px)}
+    50%{transform: translateY(5px)}
+    100%{transform: translateY(-5px)}
 }
 
 .btn-default{
@@ -245,6 +263,21 @@ body {
     @include Montserrat_Regular;
     text-transform: uppercase;
     text-decoration: none;
+    box-shadow: inset 0px 0px 0 0 rgba(38, 38, 38, 0);
+    transition: box-shadow .3s 0s, color .3s 0s;
+
+    &:hover {
+        box-shadow: inset 0px 0px 50px 30px rgba(38, 38, 38, 0.8);
+        color: $cWhite;
+    }
+}
+
+.arrow{
+    width: 70px;
+    height: 12px;
+    background-image: url('/dist/img/spritesheet.png');
+    background-position: -29px -76px;
+    margin: 0 auto 0 auto;
 }
 
 .handwritten-font{

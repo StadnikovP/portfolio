@@ -1,5 +1,4 @@
-        <footer>footer</footer>
+        </div>
         <script src="/dist/main.js"></script>
-<!--        <script src="/src/js/app.js"></script>-->
     </body>
 </html>

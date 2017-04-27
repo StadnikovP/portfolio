@@ -3,7 +3,7 @@ $page = "main";
 include('./components/header.php');
 ?>
 
-<div class="wrapper-main-slider">
+<div class="wrapper-main-slider" data-is="main-slider">
     <div class="swiper-container js-main-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -31,7 +31,7 @@ include('./components/header.php');
         <div class="wrapper-content">
             <div class="title handwritten-font">Discover</div>
             <div class="second-title">Our History</div>
-            <div class="row"><img src="/dist/img/row.png" alt=""></div>
+            <div class="arrow row"></div>
             <div class="text">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec</div>
             <div class="btn-default">about us</div>
         </div>
@@ -218,9 +218,9 @@ include('./components/header.php');
                     <div class="chefs-name">James T kirk</div>
                     <div class="chefs-title">Captain</div>
                     <div class="chefs-social-list">
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item chefs-social-f"></a>
+                        <a href="#" class="chefs-social-item chefs-social-in"></a>
+                        <a href="#" class="chefs-social-item chefs-social-p"></a>
                     </div>
                     <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
                 </div>
@@ -231,9 +231,9 @@ include('./components/header.php');
                     <div class="chefs-name">Leonard mccoy</div>
                     <div class="chefs-title">Doctor Not  A ...</div>
                     <div class="chefs-social-list">
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item chefs-social-f"></a>
+                        <a href="#" class="chefs-social-item chefs-social-in"></a>
+                        <a href="#" class="chefs-social-item chefs-social-p"></a>
                     </div>
                     <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
                 </div>
@@ -244,9 +244,9 @@ include('./components/header.php');
                     <div class="chefs-name">Hikaru sulu</div>
                     <div class="chefs-title">Pilot</div>
                     <div class="chefs-social-list">
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
-                        <a href="#" class="chefs-social-item"></a>
+                        <a href="#" class="chefs-social-item chefs-social-f"></a>
+                        <a href="#" class="chefs-social-item chefs-social-in"></a>
+                        <a href="#" class="chefs-social-item chefs-social-p"></a>
                     </div>
                     <div class="chefs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
                 </div>
@@ -263,28 +263,59 @@ include('./components/header.php');
 </div>
 
 <div class="wrapper-quote-slider">
-    <div class="swiper-container js-quote-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="inner-slide">
-                    <div class="icon-quote"><img src="/dist/img/quote-icon.png" alt=""></div>
-                    <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
-                    <div class="author-quote">John Wick</div>
-                    <div class="profession-quote">Proffesional Cleaner</div>
+    <div class="container-quote-slider" data-is="quote-slider">
+        <div class="swiper-container js-quote-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="inner-slide">
+                        <div class="icon-quote"></div>
+                        <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+                        <div class="author-quote">John Wick</div>
+                        <div class="profession-quote">Proffesional Cleaner</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner-slide">
+                        <div class="icon-quote"></div>
+                        <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+                        <div class="author-quote">John Wick</div>
+                        <div class="profession-quote">Proffesional Cleaner</div>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <div class="inner-slide">
-                    <div class="icon-quote"><img src="/dist/img/quote-icon.png" alt=""></div>
-                    <div class="text-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
-                    <div class="author-quote">John Wick</div>
-                    <div class="profession-quote">Proffesional Cleaner</div>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
+        <div class="swiper-button-prev is-slider-swiper-prev"></div>
+        <div class="swiper-button-next is-slider-swiper-next"></div>
     </div>
-    <div class="swiper-button-prev is-slider-swiper-prev"></div>
-    <div class="swiper-button-next is-slider-swiper-next"></div>
+</div>
+
+<div class="wrapper-reviews">
+    <div class="title handwritten-font">Our Best Clients</div>
+    <div class="second-title">HAPPY CUSTOMERS</div>
+    <div class="arrow row"></div>
+    <div class="text-reviews">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</div>
+    <div class="level-reviews">
+        <div class="reviews-item reviews-active"></div>
+        <div class="reviews-item reviews-active"></div>
+        <div class="reviews-item reviews-active"></div>
+        <div class="reviews-item reviews-active"></div>
+        <div class="reviews-item"></div>
+    </div>
+    <div class="name-reviews">bad comedian</div>
+    <div class="rang-reviews">Movie Critic</div>
+</div>
+
+<div class="wrapper-subscribe">
+    <div class="second-title">SUBSCRIBE TO OUR NEWSLETTER</div>
+    <div class="arrow row"></div>
+    <form class="form-subscribe" action="">
+        <label class="label-subscribe" for="">
+            <input class="input-subscribe" type="text">
+            <span>Email</span>
+        </label>
+        <button class="btn-default">SUBSCRIBE</button>
+    </form>
 </div>
 
 <? include('./components/footer.php'); ?>
